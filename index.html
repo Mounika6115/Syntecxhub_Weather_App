@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="weather-app">
+
+            <div class="header">
+                <div class="weather-logo">
+                    <span>☁️</span>
+                </div>
+
+                <div>
+                    <h1>Weather App</h1>
+                    <p>Live weather information for any city</p>
+                </div>
+            </div>
+
+
+            <div class="search-section">
+
+                <div class="search-box">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        id="cityInput"
+                        placeholder="Search for a city..."
+                        autocomplete="off"
+                    >
+
+                    <button id="searchBtn">
+                        Search
+                    </button>
+
+                </div>
+
+                <p id="errorMessage"></p>
+
+            </div>
+
+
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading weather...</p>
+            </div>
+
+
+            <section id="weatherCard" class="weather-card">
+
+                <div class="location">
+
+                    <div>
+                        <p class="small-title">CURRENT WEATHER</p>
+
+                        <h2 id="cityName">
+                            Search a city
+                        </h2>
+
+                        <p id="countryName">
+                            Enter a city above
+                        </p>
+                    </div>
+
+                    <div class="location-icon">
+                        📍
+                    </div>
+
+                </div>
+
+
+                <div class="main-weather">
+
+                    <div class="weather-icon-container">
+
+                        <img
+                            id="weatherIcon"
+                            src=""
+                            alt="Weather icon"
+                        >
+
+                    </div>
+
+
+                    <div class="temperature-section">
+
+                        <h3 id="temperature">
+                            --°C
+                        </h3>
+
+                        <p id="description">
+                            Search for a city
+                        </p>
+
+                        <p id="feelsLike">
+                            Feels like --°C
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="weather-details">
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon">
+                            💧
+                        </div>
+
+                        <div>
+                            <p>Humidity</p>
+                            <strong id="humidity">--%</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon">
+                            💨
+                        </div>
+
+                        <div>
+                            <p>Wind Speed</p>
+                            <strong id="windSpeed">-- m/s</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon">
+                            🌡️
+                        </div>
+
+                        <div>
+                            <p>Pressure</p>
+                            <strong id="pressure">-- hPa</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="detail-card">
+
+                        <div class="detail-icon">
+                            👁️
+                        </div>
+
+                        <div>
+                            <p>Visibility</p>
+                            <strong id="visibility">-- km</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-info">
+
+                    <p>
+                        🌤️ Live weather data powered by OpenWeatherMap
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
